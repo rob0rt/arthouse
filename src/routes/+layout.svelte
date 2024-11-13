@@ -4,7 +4,7 @@
 	let { children } = $props();
 </script>
 
-<header class="pt-4 px-4 text-sm font-medium bg-[#577058]">
+<header class="pt-4 px-4 text-sm font-medium bg-forest-500">
 	<h1 class="cantata-one-regular text-white text-2xl">
 		<a href="/"> art house </a>
 	</h1>
