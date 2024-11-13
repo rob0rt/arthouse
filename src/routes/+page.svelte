@@ -1,5 +1,7 @@
 <script lang="ts">
 	import logo from '$lib/assets/logo.png';
+	import edit from '$lib/assets/icons/edit.png';
+	import post from '$lib/assets/icons/post.png';
 	import ProfileInfoSection from './ProfileInfoSection.svelte';
 	import ProfileTabButton from './ProfileTabButton.svelte';
 </script>
@@ -11,6 +13,7 @@
 	<nav class="border-b-2 mt-2 flex divide-x-2" style="padding-left: calc(250px + 2rem);">
 		<ProfileTabButton href="/" active={true}>Wall</ProfileTabButton>
 		<ProfileTabButton href="/">About</ProfileTabButton>
+		<ProfileTabButton href="/">Friends</ProfileTabButton>
 	</nav>
 </header>
 <div class="flex flex-row">
@@ -65,5 +68,20 @@
 			</div>
 		</ProfileInfoSection>
 	</aside>
-	<section class="my-4 mr-4 flex flex-col grow"></section>
+	<section class="my-4 mr-4 flex flex-col grow">
+		<article class="ml-10">
+			<header class="flex flex-row content-center text-slate-700">
+				<img src={edit} alt="edit icon" class="flex-none h-min self-center mr-2" />
+				<b>Art House Collective</b>&nbsp;edited their profile
+				<span class="text-slate-400 text-xs self-center ml-2">November 12th, 2024</span>
+			</header>
+		</article>
+		<hr class="ml-8 my-2" />
+		<article class="ml-10">
+			<header class="flex flex-row content-center text-slate-700">
+				<img src={post} alt="post icon" class="flex-none h-min self-center mr-2" />
+				<b>Art House Collective</b>&nbsp;made a new post
+			</header>
+		</article>
+	</section>
 </div>
