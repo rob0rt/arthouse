@@ -4,7 +4,7 @@
 	import ProfileTabButton from './ProfileTabButton.svelte';
 </script>
 
-<div class="pt-4 bg-forest-100">
+<header class="pt-4 bg-forest-100">
 	<h1 class="font-semibold text-2xl" style="margin-left: calc(250px + 2rem);">
 		Art House Collective
 	</h1>
@@ -12,8 +12,8 @@
 		<ProfileTabButton href="/" active={true}>Wall</ProfileTabButton>
 		<ProfileTabButton href="/">About</ProfileTabButton>
 	</nav>
-</div>
-<main class="flex flex-row">
+</header>
+<div class="flex flex-row">
 	<aside class="my-4 ml-4 flex flex-col w-[250px] space-y-4 -top-[90px] relative">
 		<img src={logo} alt="arthouse logo" class="border border-black" />
 
@@ -66,4 +66,4 @@
 		</ProfileInfoSection>
 	</aside>
 	<section class="my-4 mr-4 flex flex-col grow"></section>
-</main>
+</div>
