@@ -10,7 +10,7 @@
 	</h1>
 	<nav class="border-b-2 mt-2 flex divide-x-2" style="padding-left: calc(250px + 2rem);">
 		<ProfileTabButton href="/" active={true}>Wall</ProfileTabButton>
-		<ProfileTabButton href="/about">About</ProfileTabButton>
+		<ProfileTabButton href="/">About</ProfileTabButton>
 	</nav>
 </div>
 <main class="flex flex-row">
